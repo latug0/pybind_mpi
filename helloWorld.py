@@ -10,7 +10,7 @@ def  main ():
     rank = comm.Get_rank ()
     size = comm.Get_size ()
     name = MPI.Get_processor_name()
-    print("hello  from " + name + " which is rank " + str( rank ) + " in " + str( size ))
+    print("Hello  from " + name + " which is rank " + str( rank ) + " in " + str( size ))
     distrib = Distributed(comm)
     distrib.say_hi()
 
