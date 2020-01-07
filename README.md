@@ -2,7 +2,10 @@
 
 Demonstrates how to call a C++ class from Python using pybind11.
 
-Derived from https://coderefinery.github.io/mma/03-pybind11/
+Derived from:
+* https://coderefinery.github.io/mma/03-pybind11/
+* https://stackoverflow.com/questions/49259704/pybind11-possible-to-use-mpi4py/50022979
+* https://lipn.univ-paris13.fr/~coti/doc/tutopympi.pdf
 
 
 ## How to build this demo
