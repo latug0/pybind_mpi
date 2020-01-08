@@ -46,7 +46,6 @@ spack load -r cmake@3.12.4
 ## How to build this demo
 
 ```
-git clone --recursive https://codev-tuleap.cea.fr/plugins/git/helix/test_pybind_mpi.git
 cd test_pybind_mpi
 mkdir build
 cd build
