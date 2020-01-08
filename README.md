@@ -10,6 +10,12 @@ Derived from the following URLs:
 * https://lipn.univ-paris13.fr/~coti/doc/tutopympi.pdf
 * https://mpi4py.readthedocs.io/en/stable/mpi4py.run.html
 
+## Contents
+ 
+Main files:
+* `mpi_lib.cpp`: C++/MPI library code
+* `helloWorld.py`: python code that call the C++/MPI library (using pybind11 and mpi4py)
+
 ## How to configure your system
 
 An easy way to setup the needed package is to use 'spack' machinery.

@@ -3,6 +3,7 @@
 from  mpi4py  import  MPI
 from mpi_lib import Distributed
 
+# Main program that delegates some work to a C++/MPI routine: say_hi
 def  main ():
     comm =   MPI.COMM_WORLD
     rank = comm.Get_rank ()
