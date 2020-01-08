@@ -1,4 +1,4 @@
-# pybind11+MPI example
+# Simple example that exhibits the use of pybind11, MPI and mpi4py
 
 ## Introduction
 
@@ -14,7 +14,7 @@ Derived from the following URLs:
 An easy way to setup the needed package is to use 'spack' machinery.
 ```
 git clone https://github.com/spack/spack
-source spack/share/spack/setup-env.sh # you should put this line into you .bashrc
+source spack/share/spack/setup-env.sh # you should also put this line into you .bashrc
 spack install py-mpi4py
 spack install py-numpy
 spack install openmpi
