@@ -1,8 +1,6 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
-import mpi4py
 from  mpi4py  import  MPI
-import numpy as np
 from mpi_lib import Distributed
 
 def  main ():
