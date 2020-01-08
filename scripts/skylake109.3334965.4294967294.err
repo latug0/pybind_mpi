@@ -1,8 +1,0 @@
-[skylake109.cluster:304871] MCW rank 0 bound to socket 0[core 0[hwt 0]]: [B/././././././././././././././.][./././././././././././././././.]
-[skylake109.cluster:304871] MCW rank 1 bound to socket 1[core 16[hwt 0]]: [./././././././././././././././.][B/././././././././././././././.]
-[skylake112.cluster:187126] MCW rank 6 bound to socket 0[core 0[hwt 0]]: [B/././././././././././././././.][./././././././././././././././.]
-[skylake112.cluster:187126] MCW rank 7 bound to socket 1[core 16[hwt 0]]: [./././././././././././././././.][B/././././././././././././././.]
-[skylake110.cluster:142867] MCW rank 2 bound to socket 0[core 0[hwt 0]]: [B/././././././././././././././.][./././././././././././././././.]
-[skylake110.cluster:142867] MCW rank 3 bound to socket 1[core 16[hwt 0]]: [./././././././././././././././.][B/././././././././././././././.]
-[skylake111.cluster:09884] MCW rank 5 bound to socket 1[core 16[hwt 0]]: [./././././././././././././././.][B/././././././././././././././.]
-[skylake111.cluster:09884] MCW rank 4 bound to socket 0[core 0[hwt 0]]: [B/././././././././././././././.][./././././././././././././././.]

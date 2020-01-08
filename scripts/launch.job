@@ -19,11 +19,11 @@ spack load -r py-numpy
 module load openmpi/gcc72/ofed/3.1.3
 
 echo “Running on: $SLURM_NODELIST”
-cd /home/glatu/test_py_bind/build
+cd /home/glatu/test_pybind_mpi/build
 ulimit -a
 
 export OMP_PLACES=cores
 export OMP_PROC_BIND=true
 export OMP_DISPLAY_ENV=true
 export OMP_SCHEDULE=static
-mpirun -report-bindings --map-by socket:PE=1 -bind-to core python3 helloWorld.py
+mpirun -report-bindings --map-by socket:PE=1 -bind-to core python3 -m mpi4py helloWorld.py
