@@ -20,8 +20,8 @@ Derived from the following URLs:
  
 Main files:
 
-- [mpi_lib.cpp](mpi_lib.cpp): C++/MPI library code
-- `helloWorld.py`: python code that call the C++/MPI library (using pybind11 and mpi4py)
+- [mpi_lib.cpp](test_pybind_mpi/mpi_lib.cpp): C++/MPI library code
+- [helloWorld.py](test_pybind_mpi/hheloWorld.py): python code that call the C++/MPI library (using pybind11 and mpi4py)
 
 ## How to configure your system
 
