@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.12)
-project(example)
+project(test_pybind_mpi)
 
 find_package(PythonLibs)
 include_directories(${PYTHON_INCLUDE_DIRS})
