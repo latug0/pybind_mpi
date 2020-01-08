@@ -1,4 +1,4 @@
-# Simple example that exhibits the use of pybind11, MPI and mpi4py
+# Example for using C++ library, pybind11, mpi4py, & MPI
 
 ## Introduction
 
@@ -43,6 +43,8 @@ git clone --recursive https://codev-tuleap.cea.fr/plugins/git/helix/test_pybind_
 cd test_pybind_mpi
 mkdir build
 cd build
+export CC=<my C compiler>
+export CXX=<my C++ compiler>
 cmake ..
 make
 ```
