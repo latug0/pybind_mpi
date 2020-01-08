@@ -1,0 +1,33 @@
+“Running on: skylake[109-112]”
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 767198
+max locked memory       (kbytes, -l) unlimited
+max memory size         (kbytes, -m) 189071360
+open files                      (-n) 65536
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 4096
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+Hello  from skylake109.cluster which is rank 0 in 8
+Hello  from skylake109.cluster which is rank 1 in 8
+Hello  from skylake110.cluster which is rank 3 in 8
+Hi from processor skylake110.cluster, rank 3 out of 8 processors
+Hello  from skylake110.cluster which is rank 2 in 8
+Hi from processor skylake110.cluster, rank 2 out of 8 processors
+Hi from processor skylake109.cluster, rank 0 out of 8 processors
+Hi from processor skylake109.cluster, rank 1 out of 8 processors
+Hello  from skylake112.cluster which is rank 6 in 8
+Hi from processor skylake112.cluster, rank 6 out of 8 processors
+Hello  from skylake112.cluster which is rank 7 in 8
+Hi from processor skylake112.cluster, rank 7 out of 8 processors
+Hello  from skylake111.cluster which is rank 5 in 8
+Hi from processor skylake111.cluster, rank 5 out of 8 processors
+Hello  from skylake111.cluster which is rank 4 in 8
+Hi from processor skylake111.cluster, rank 4 out of 8 processors
