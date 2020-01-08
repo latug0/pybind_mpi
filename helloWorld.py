@@ -10,8 +10,8 @@ def  main ():
     rank = comm.Get_rank ()
     size = comm.Get_size ()
     name = MPI.Get_processor_name()
-    print("Hello  from " + name + " which is rank " + str( rank ) + " in " + str( size ))
-    distrib = Distributed(comm)
+    print("[Python] Hello from machine " + name + ", MPI rank " + str( rank ) + " out of " + str( size ))
+    distrib = Distributed()
     distrib.say_hi()
 
 if  __name__  == "__main__":
