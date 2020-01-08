@@ -5,19 +5,21 @@
 Demonstrates how to call a C++ class from Python using pybind11 together with MPI.
 
 To fetch this repository use the following command:
- `git clone --recursive https://codev-tuleap.cea.fr/plugins/git/helix/test_pybind_mpi.git`
+```
+git clone --recursive https://codev-tuleap.cea.fr/plugins/git/helix/test_pybind_mpi.git
+```
 
 Derived from the following URLs:
-* https://coderefinery.github.io/mma/03-pybind11
-* https://stackoverflow.com/questions/49259704/pybind11-possible-to-use-mpi4py/50022979
-* https://lipn.univ-paris13.fr/~coti/doc/tutopympi.pdf
-* https://mpi4py.readthedocs.io/en/stable/mpi4py.run.html
+- https://coderefinery.github.io/mma/03-pybind11
+- https://stackoverflow.com/questions/49259704/pybind11-possible-to-use-mpi4py/50022979
+- https://lipn.univ-paris13.fr/~coti/doc/tutopympi.pdf
+- https://mpi4py.readthedocs.io/en/stable/mpi4py.run.html
 
 ## Contents
  
 Main files:
-   * `mpi_lib.cpp`: C++/MPI library code
-   * `helloWorld.py`: python code that call the C++/MPI library (using pybind11 and mpi4py)
+- `mpi_lib.cpp`: C++/MPI library code
+- `helloWorld.py`: python code that call the C++/MPI library (using pybind11 and mpi4py)
 
 ## How to configure your system
 
