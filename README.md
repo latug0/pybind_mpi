@@ -25,7 +25,7 @@ Main files:
 
 ## How to configure your system
 
-An easy way to setup the needed package is to use 'spack' machinery.
+An easy way to setup the needed packages is to use 'spack' machinery.
 ```
 git clone https://github.com/spack/spack
 source spack/share/spack/setup-env.sh # you should also put this line into you .bashrc
