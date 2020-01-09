@@ -6,7 +6,7 @@ Demonstrates how to call a C++ class from Python using pybind11 together with MP
 
 To fetch this repository use the following command:
 ```
-git clone --recursive https://codev-tuleap.cea.fr/plugins/git/helix/test_pybind_mpi.git
+git clone --recursive https://github.com/latug0/pybind_mpi.git
 ```
 
 Derived from the following URLs:
