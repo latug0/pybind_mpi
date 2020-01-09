@@ -46,7 +46,7 @@ spack load -r cmake@3.12.4
 ## How to build this demo
 
 ```
-cd test_pybind_mpi
+cd pybind_mpi
 mkdir build
 cd build
 export CC=<my C compiler>
