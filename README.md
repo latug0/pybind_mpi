@@ -29,22 +29,25 @@ An easy way to setup the needed packages is to use 'spack' machinery on a Linux 
 ```
 git clone https://github.com/spack/spack
 source spack/share/spack/setup-env.sh # you should also put this line into you .bashrc
+spack install openmpi
+spack install python@3.7.4
 spack install py-mpi4py
 spack install py-numpy
-spack install openmpi
 spack install cmake@3.12.4
 ```
 
 Each time you want to use the installed package, you will do:
 ```
+spack load -r openmpi
+spack load python@3.7.4
 spack load -r py-mpi4py
 spack load -r py-numpy
-spack load -r openmpi
 spack load -r cmake@3.12.4
 ```
 
 Another way to go without spack for a quicker installation under root can be:
 ```
+apt install openmpi
 apt install python3
 apt install cmake
 pip3 install numpy
