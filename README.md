@@ -25,7 +25,7 @@ Main files:
 
 ## How to configure your system
 
-An easy way to setup the needed packages is to use 'spack' machinery.
+An easy way to setup the needed packages is to use 'spack' machinery on a Linux machine.
 ```
 git clone https://github.com/spack/spack
 source spack/share/spack/setup-env.sh # you should also put this line into you .bashrc
@@ -42,6 +42,15 @@ spack load -r py-numpy
 spack load -r openmpi
 spack load -r cmake@3.12.4
 ```
+
+Another way to go without spack for a quicker installation under root can be:
+```
+apt install python3
+apt install cmake
+pip3 install numpy
+pip3 install https://bitbucket.org/mpi4py/mpi4py/get/master.tar.gz
+```
+
 
 ## How to build this demo
 
