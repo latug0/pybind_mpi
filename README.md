@@ -8,6 +8,12 @@ To fetch this repository use the following command:
 ```
 git clone --recursive https://codev-tuleap.cea.fr/plugins/git/helix/test_pybind_mpi.git
 ```
+or
+```
+git clone https://codev-tuleap.cea.fr/plugins/git/helix/test_pybind_mpi.git
+git submodule init
+git submodule update --init
+```
 
 Derived from the following URLs:
 
