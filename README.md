@@ -6,7 +6,7 @@ Demonstrates how to call a C++ class from Python using pybind11 together with MP
 
 To fetch this repository use the following command:
 ```
-git clone --recursive https://github.com/latug0/pybind_mpi.git
+git clone --recursive https://codev-tuleap.cea.fr/plugins/git/helix/test_pybind_mpi.git
 ```
 
 Derived from the following URLs:
@@ -25,7 +25,7 @@ Main files:
 
 ## How to configure your system
 
-An easy way to setup the needed packages is to use 'spack' machinery on a Linux machine.
+An easy way to setup the needed package is to use 'spack' machinery.
 ```
 git clone https://github.com/spack/spack
 source spack/share/spack/setup-env.sh # you should also put this line into you .bashrc
@@ -45,7 +45,7 @@ spack load -r py-numpy
 spack load -r cmake@3.12.4
 ```
 
-Another way to go without spack for a quicker installation under root can be:
+Another way to go without spack for a quicker installation (however requiring root user access) can be:
 ```
 apt install openmpi
 apt install python3
@@ -58,7 +58,7 @@ pip3 install https://bitbucket.org/mpi4py/mpi4py/get/master.tar.gz
 ## How to build this demo
 
 ```
-cd pybind_mpi
+cd test_pybind_mpi
 mkdir build
 cd build
 export CC=<my C compiler>
@@ -70,21 +70,39 @@ make
 ## Example test run
 
 ```
-mpirun -n 8 python3 -m mpi4py helloWorld.py
-[Python] Hello from machine skylake109.cluster, MPI rank 0 out of 8
-[Python] Hello from machine skylake109.cluster, MPI rank 1 out of 8
-[Python] Hello from machine skylake110.cluster, MPI rank 2 out of 8
-[Python] Hello from machine skylake110.cluster, MPI rank 3 out of 8
-[Python] Hello from machine skylake111.cluster, MPI rank 4 out of 8
-[Python] Hello from machine skylake111.cluster, MPI rank 5 out of 8
-[Python] Hello from machine skylake112.cluster, MPI rank 6 out of 8
-[Python] Hello from machine skylake112.cluster, MPI rank 7 out of 8
-[C++]    Hello from machine skylake109.cluster, MPI rank 0 out of 8
-[C++]    Hello from machine skylake109.cluster, MPI rank 1 out of 8
-[C++]    Hello from machine skylake110.cluster, MPI rank 2 out of 8
-[C++]    Hello from machine skylake110.cluster, MPI rank 3 out of 8
-[C++]    Hello from machine skylake111.cluster, MPI rank 4 out of 8
-[C++]    Hello from machine skylake111.cluster, MPI rank 5 out of 8
-[C++]    Hello from machine skylake112.cluster, MPI rank 6 out of 8
-[C++]    Hello from machine skylake112.cluster, MPI rank 7 out of 8
+mpirun -n 8 python3 helloWorld.py
+[Python] Hello from machine skylake095.cluster, MPI rank 3 out of 8
+[C++]    Hello from machine skylake095.cluster, MPI rank 3 out of 8
+[Python] Hello from machine skylake095.cluster, MPI rank 2 out of 8
+[C++]    Hello from machine skylake095.cluster, MPI rank 2 out of 8
+[Python] Hello from machine skylake090.cluster, MPI rank 1 out of 8
+[C++]    Hello from machine skylake090.cluster, MPI rank 1 out of 8
+[Python] Hello from machine skylake099.cluster, MPI rank 5 out of 8
+[C++]    Hello from machine skylake099.cluster, MPI rank 5 out of 8
+[Python] Hello from machine skylake099.cluster, MPI rank 4 out of 8
+[C++]    Hello from machine skylake099.cluster, MPI rank 4 out of 8
+[Python] Hello from machine skylake100.cluster, MPI rank 6 out of 8
+[C++]    Hello from machine skylake100.cluster, MPI rank 6 out of 8
+[Python] Hello from machine skylake100.cluster, MPI rank 7 out of 8
+[C++]    Hello from machine skylake100.cluster, MPI rank 7 out of 8
+[Python] Hello from machine skylake090.cluster, MPI rank 0 out of 8
+[C++]    Hello from machine skylake090.cluster, MPI rank 0 out of 8
+Detected thread level MPI_THREAD_FUNNELED
+Hello World from thread = 0
+Hello World from thread = 5
+Hello World from thread = 4
+Hello World from thread = 10
+Hello World from thread = 1
+Hello World from thread = 2
+Hello World from thread = 13
+Hello World from thread = 3
+Hello World from thread = 11
+Hello World from thread = 8
+Hello World from thread = 9
+Hello World from thread = 6
+Hello World from thread = 14
+Hello World from thread = 7
+Hello World from thread = 12
+Hello World from thread = 15
+Number of threads = 16
 ```

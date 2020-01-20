@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 
-from  mpi4py  import  MPI
+import mpi4py
+mpi4py.rc.threaded = True
+mpi4py.rc.thread_level = "funneled"
+from mpi4py  import  MPI
 from mpi_lib import Distributed
 
 # Main program that delegates some work to a C++/MPI routine: say_hi
